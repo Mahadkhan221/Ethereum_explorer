@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Ethereum theme colors */
+  --ethereum-50: hsl(220, 100%, 97%);
+  --ethereum-100: hsl(220, 100%, 94%);
+  --ethereum-200: hsl(220, 100%, 88%);
+  --ethereum-300: hsl(220, 100%, 82%);
+  --ethereum-400: hsl(220, 100%, 75%);
+  --ethereum-500: hsl(220, 70%, 58%);
+  --ethereum-600: hsl(225, 71%, 46%);
+  --ethereum-700: hsl(230, 72%, 39%);
+  --ethereum-800: hsl(232, 67%, 32%);
+  --ethereum-900: hsl(233, 60%, 26%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-ethereum-50 { color: var(--ethereum-50); }
+  .text-ethereum-100 { color: var(--ethereum-100); }
+  .text-ethereum-200 { color: var(--ethereum-200); }
+  .text-ethereum-300 { color: var(--ethereum-300); }
+  .text-ethereum-400 { color: var(--ethereum-400); }
+  .text-ethereum-500 { color: var(--ethereum-500); }
+  .text-ethereum-600 { color: var(--ethereum-600); }
+  .text-ethereum-700 { color: var(--ethereum-700); }
+  .text-ethereum-800 { color: var(--ethereum-800); }
+  .text-ethereum-900 { color: var(--ethereum-900); }
+  
+  .bg-ethereum-50 { background-color: var(--ethereum-50); }
+  .bg-ethereum-100 { background-color: var(--ethereum-100); }
+  .bg-ethereum-200 { background-color: var(--ethereum-200); }
+  .bg-ethereum-300 { background-color: var(--ethereum-300); }
+  .bg-ethereum-400 { background-color: var(--ethereum-400); }
+  .bg-ethereum-500 { background-color: var(--ethereum-500); }
+  .bg-ethereum-600 { background-color: var(--ethereum-600); }
+  .bg-ethereum-700 { background-color: var(--ethereum-700); }
+  .bg-ethereum-800 { background-color: var(--ethereum-800); }
+  .bg-ethereum-900 { background-color: var(--ethereum-900); }
+  
+  .border-ethereum-50 { border-color: var(--ethereum-50); }
+  .border-ethereum-100 { border-color: var(--ethereum-100); }
+  .border-ethereum-200 { border-color: var(--ethereum-200); }
+  .border-ethereum-300 { border-color: var(--ethereum-300); }
+  .border-ethereum-400 { border-color: var(--ethereum-400); }
+  .border-ethereum-500 { border-color: var(--ethereum-500); }
+  .border-ethereum-600 { border-color: var(--ethereum-600); }
+  .border-ethereum-700 { border-color: var(--ethereum-700); }
+  .border-ethereum-800 { border-color: var(--ethereum-800); }
+  .border-ethereum-900 { border-color: var(--ethereum-900); }
+  
+  .hover\:bg-ethereum-50:hover { background-color: var(--ethereum-50); }
+  .hover\:bg-ethereum-100:hover { background-color: var(--ethereum-100); }
+  .hover\:bg-ethereum-200:hover { background-color: var(--ethereum-200); }
+  .hover\:bg-ethereum-300:hover { background-color: var(--ethereum-300); }
+  .hover\:bg-ethereum-400:hover { background-color: var(--ethereum-400); }
+  .hover\:bg-ethereum-500:hover { background-color: var(--ethereum-500); }
+  .hover\:bg-ethereum-600:hover { background-color: var(--ethereum-600); }
+  .hover\:bg-ethereum-700:hover { background-color: var(--ethereum-700); }
+  .hover\:bg-ethereum-800:hover { background-color: var(--ethereum-800); }
+  .hover\:bg-ethereum-900:hover { background-color: var(--ethereum-900); }
+  
+  .hover\:border-ethereum-50:hover { border-color: var(--ethereum-50); }
+  .hover\:border-ethereum-100:hover { border-color: var(--ethereum-100); }
+  .hover\:border-ethereum-200:hover { border-color: var(--ethereum-200); }
+  .hover\:border-ethereum-300:hover { border-color: var(--ethereum-300); }
+  .hover\:border-ethereum-400:hover { border-color: var(--ethereum-400); }
+  .hover\:border-ethereum-500:hover { border-color: var(--ethereum-500); }
+  .hover\:border-ethereum-600:hover { border-color: var(--ethereum-600); }
+  .hover\:border-ethereum-700:hover { border-color: var(--ethereum-700); }
+  .hover\:border-ethereum-800:hover { border-color: var(--ethereum-800); }
+  .hover\:border-ethereum-900:hover { border-color: var(--ethereum-900); }
+}

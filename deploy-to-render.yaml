@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ethereum-dashboard
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALCHEMY_API_KEY
+        value: CPbZRXVteDe0NB46s4oda4q_KEIMPfMu
